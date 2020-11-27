@@ -1,0 +1,29 @@
+{
+  "name": "filecab",
+  "version": "4.0.0",
+  "description": "file cab program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron .",
+    "pack": "build --dir",
+    "debx": ".\\node_modules\\electron\\dist\\electron.exe .",
+    "start": ".\\node_modules\\electron\\dist\\electron.exe .",
+    "dist": "build"
+  },
+  "author": "David Berkheimer",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.1.0",
+    "electron-builder": "^20.39.0"
+  },
+  "build": {
+    "appId": "com.deb.fileCab",
+    "productName": "File Cabinet V4",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {}
+}
